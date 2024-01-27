@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="welcome to our website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="bg-slate-800">
+    <header class="header-page w-full bg-slate-700 rounded-sm p-4 text-center">
+        <h1><cite class="text-white font-bold text-xl"> Welcome to our warehousing </cite></h1>
+    </header>
+    <section class="root container mx-auto mt-8 w-full flex flex-col gap-8">
+        <nav class="root__link-tab">
+            <ul class="list-none flex flex-row gap-4">
+                <li><a href="#" class="px-4 p-2 border focus:border-none text-white rounded-md focus:ring-2 focus:ring-blue-600"> Add new product </a></li>
+                <li><a href="#" class="px-4 p-2 border focus:border-none text-white rounded-md focus:ring-2 focus:ring-blue-600"> Create new category </a></li>
+            </ul>
+        </nav>
+        <div class="w-full flex flex-col items-center gap-8">
+            <form action="" method="post" class="w-1/2 p-3 bg-slate-700 rounded-lg flex flex-col gap-6">
+                <h2 class="w-full text-center text-white font-bold text-lg"> Product </h2>
+
+                <div class="w-full flex flex-col gap-3">
+                    <label for="inputTitle" class="text-white font-semibold"> title new product </label>
+                    <input type="text" class="focus:outline-none text-white bg-transparent px-4 p-2 border rounded-md" placeholder="please enter the name" id="inputTitle">
+                </div>
+                <div class="w-full flex flex-col gap-3">
+                    <label for="inputquantity" class="text-white font-semibold"> enter the quantity product </label>
+                    <input type="number" class="focus:outline-none text-white bg-transparent px-4 p-2 border rounded-md" placeholder="please enter quantity" id="inputquantity">
+                </div>
+                <div class="w-full flex flex-col gap-3">
+                    <label for="selectBox" class="text-white font-semibold"> category </label>
+                    <select id="selectBox" class="px-4 p-2 bg-transparent border rounded-md text-white">
+                        <option value="selectcategory" class="bg-slate-700"> select category </option>
+                        <option value="6th" class="bg-slate-700"> 6th </option>
+                        <option value="5th" class="bg-slate-700"> 5th </option>
+                        <option value="DevOps" class="bg-slate-700"> DevOps </option>
+                        <option value="IOS" class="bg-slate-700"> IOS </option>
+                        <option value="backend" class="bg-slate-700"> backend </option>
+                        <option value="frontend" class="bg-slate-700"> frontend </option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full py-3 text-center text-white bg-slate-600 rounded-md font-semibold transition-all hover:bg-gradient-to-b hover:from-green-700 hover:to-green-800"> Create new Product </button>
+            </form>
+            <div class="w-1/2 p-3 rounded-lg flex flex-col">
+                <h1 class="text-white font-semibold text-lg"> Product List </h1>
+                <form action="" method="post" class="w-full flex flex-col gap-6">
+                    <div class="w-full flex flex-row justify-between items-center">
+                        <label for="searchBox" class="text-white"> search </label>
+                        <input id="searchBox" type="text" class="border bg-transparent rounded-md px-4 p-2 text-white focus:outline-none">
+                    </div>
+                    <div class="w-full flex flex-row justify-between items-center">
+                        <label for="sortBox" class="text-white"> sort </label>
+                        <select id="sortBox" class="px-4 p-2 bg-transparent border rounded-md text-white">
+                            <option value="selectcategory" class="bg-slate-700"> select category </option>
+                            <option value="6th" class="bg-slate-700"> 6th </option>
+                            <option value="5th" class="bg-slate-700"> 5th </option>
+                            <option value="DevOps" class="bg-slate-700"> DevOps </option>
+                            <option value="IOS" class="bg-slate-700"> IOS </option>
+                            <option value="backend" class="bg-slate-700"> backend </option>
+                            <option value="frontend" class="bg-slate-700"> frontend </option>
+                        </select>
+                    </div>
+                </form>
+                <div class="w-full flex flex-col gap-4 mt-8">
+                    <div class="w-full flex flex-row items-center justify-between">
+                        <div class="flex flex-row items-center gap-3">
+                            <span class="px-3 p-1 border border-red-500 rounded-2xl text-red-500"> delete </span>
+                            <span class="leading-4 p-1 rounded-full bg-gray-400 text-white border border-white"> 10 </span>
+                            <span class="px-3 p-1 border rounded-xl text-white">6th</span>
+                            <span class="text-white"> 1401/2/18 </span>
+                        </div>
+                        <span class="text-white"> 6th product </span>
+                    </div>
+                    <div class="w-full flex flex-row items-center justify-between">
+                        <div class="flex flex-row items-center gap-3">
+                            <span class="px-3 p-1 border border-red-500 rounded-2xl text-red-500"> delete </span>
+                            <span class="leading-4 p-1 rounded-full bg-gray-400 text-white border border-white"> 10 </span>
+                            <span class="px-3 p-1 border rounded-xl text-white">6th</span>
+                            <span class="text-white"> 1401/2/18 </span>
+                        </div>
+                        <span class="text-white"> 6th product </span>
+                    </div>
+                </div>
+            </div>
+            <form action="" method="post" class="w-1/2 p-3 bg-slate-700 rounded-lg flex flex-col gap-6">
+                <h2 class="w-full text-center text-white font-bold text-lg"> Category </h2>
+                <div class="w-full flex flex-col gap-3">
+                    <label for="second-input__Title" class="text-white font-semibold"> title new category </label>
+                    <input id="second-input__Title" type="text" class="focus:outline-none text-white bg-transparent px-4 p-2 border rounded-md" placeholder="please enter the name">
+                </div>
+                <div class="w-full flex flex-col gap-3">
+                    <label for="second-textarea__box" class="text-white"> description </label>
+                    <textarea id="second-textarea__box" cols="15" rows="" class="resize-none p-3 border rounded-md bg-transparent focus:outline-none text-white"></textarea>
+                </div>
+                <div class="flex flex-row items-center justify-around mt-4">
+                    <button class="flex grow px-8 justify-center p-2 mx-4  text-white bg-slate-600 rounded-md font-semibold transition-all hover:bg-gradient-to-b hover:from-green-700 hover:to-green-800"> Create new category </button>
+                    <button class="flex grow px-8 justify-center p-2  text-white border rounded-md font-semibold transition-all"> Cancel </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="../src/js/app.js" type="module"></script>
+</body>
+</html>
